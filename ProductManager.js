@@ -39,7 +39,7 @@ class ProductManager {
     if (!getProductId) {
       console.log("Producto no encontrado");
     } else {
-      console.log(getProductId);
+      console.log("Este es el producto que buscabas:", getProductId);
     }
   }
 }
@@ -100,3 +100,5 @@ products.addProduct({
 });
 
 products.getProduct();
+
+products.getProductById(4);
