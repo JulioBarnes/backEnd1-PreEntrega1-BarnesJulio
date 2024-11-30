@@ -30,6 +30,7 @@ export class ProductManager {
       thumbnail,
       code,
       stock,
+      status: true,
       category,
     };
 
@@ -64,6 +65,8 @@ export class ProductManager {
     this.products[index] = { ...this.products[index], ...data };
 
     await fs.promises.writeFile(this.path, JSON.stringify(this.products));
+
+    return this.products[index];
   }
 
   async deleteProduct(id) {
@@ -71,5 +74,7 @@ export class ProductManager {
     this.products = this.products.filter((product) => product.id !== id);
 
     await fs.promises.writeFile(this.path, JSON.stringify(this.products));
+
+    return `El producto con el id ${id} fue eliminado`;
   }
 }
