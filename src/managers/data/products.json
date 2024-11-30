@@ -1,0 +1,12 @@
+[
+  {
+    "id": "42893816-b899-4ecd-97c1-8083cb9b86ee",
+    "title": "Perfume 1",
+    "description": "Descripcion de Perfume 1",
+    "price": 150,
+    "thumbnail": [],
+    "code": "ABC001",
+    "stock": 10,
+    "category": "Amaderado"
+  }
+]
